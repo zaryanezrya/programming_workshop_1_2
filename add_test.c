@@ -1,4 +1,5 @@
 #include <assert.h>
+#include <math.h>
 
 #include "add.h"
 
@@ -27,7 +28,7 @@ void test_add_double_general2() {
   double a = 0.1;
   double b = 0.2;
   double res = add_double(a, b);
-  assert(res == 0.3);
+  assert(fabs(res - 0.3) < 0.000001);
 
   // |a - b| < eps
 }
