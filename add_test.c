@@ -14,7 +14,7 @@ void test_add_int_general2() {
   int a = 11;
   int b = 32;
   int res = add_int(a, b);
-    assert(res == 43);
+  assert(res == 43);
 }
 
 void test_add_double_general() {
