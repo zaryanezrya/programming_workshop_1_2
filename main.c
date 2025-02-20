@@ -1,17 +1,17 @@
 #include "add.h"
-#include <stdio.h>
 #include <assert.h>
+#include <stdio.h>
 
 void test_add_1() {
-    // Arrange
-    int a = 10;
-    int b = 100;
+  // Arrange
+  int a = 10;
+  int b = 100;
 
-    // Act
-    int res = add_int(a, b);
+  // Act
+  int res = add_int(a, b);
 
-    // Assert
-    assert(res == 110);
+  // Assert
+  assert(res == 110);
 }
 
 void test_add_2() {
