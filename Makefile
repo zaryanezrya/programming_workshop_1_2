@@ -10,16 +10,16 @@ check_fmt:
 # ---
 
 add.o: add.c add.h
-	gcc -c add.c -o add.o
+	gcc -g -c add.c -o add.o
 
 add.a: add.o
 	ar rc add.a add.o
 
 add_test.o: add_test.c add.h
-	gcc -c add_test.c -o add_test.o
+	gcc -g -c add_test.c -o add_test.o
 
 add_test: add_test.o add.a
-	gcc -static -o add_test add_test.o add.a 
+	gcc -g -static -o add_test add_test.o add.a 
 
 
 test: add_test
