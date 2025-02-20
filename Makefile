@@ -22,6 +22,11 @@ add_test: add_test.o add.a
 	gcc -g -static -o add_test add_test.o add.a
 
 # ---
+memory_test: memory_test.c
+	gcc -g memory_test.c -o memory_test
 
-test: add_test
+# ---
+
+test: add_test memory_test
 	./add_test
+	./memory_test
